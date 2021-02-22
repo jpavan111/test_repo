@@ -15,6 +15,6 @@
 		<!-- Allowing the Hibernate to Perform DDL Operation -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
 		
-		<!--<mapping class="in.edac.dao.User"/>  -->  
+		<mapping class="in.edac.dao.User"/>    
 	</session-factory>	
 </hibernate-configuration>	
