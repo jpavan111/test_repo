@@ -25,8 +25,10 @@ public class LoginAction extends HttpServlet {
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
 			
+			long us2 =  Long.parseLong(username);
+			
 			LoginDao dao = new LoginDao();
-			User user = new User(username, password, null, null);
+			User user = new User(us2, password, null, null);
 			boolean check =  dao.authenticateUser(user);
 			
 			if(check == true) {

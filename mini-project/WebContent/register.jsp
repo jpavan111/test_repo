@@ -43,7 +43,7 @@
 				</div>
 			
 				<div class="mt-1">
-					<input name="username" class="form-control form-control-lg" type="text" placeholder="Username..." >
+					<input name="username" class="form-control form-control-lg" type="text" placeholder="roll number..." >
 				</div>
 				
 				<div class="mt-1">
