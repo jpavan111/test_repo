@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import in.edac.dao.LoginDao;
 import in.edac.dao.User;
@@ -25,14 +26,19 @@ public class LoginAction extends HttpServlet {
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
 			
-			long us2 =  Long.parseLong(username);
+			
 			
 			LoginDao dao = new LoginDao();
-			User user = new User(us2, password, null, null);
+			User user = new User(username, password, null, null);
 			boolean check =  dao.authenticateUser(user);
 			
 			if(check == true) {
+				HttpSession session=request.getSession();
+				session.setAttribute("my-auth","1");
+				
 				response.sendRedirect("/mini-project/advance_java.jsp");
+				
+				
 			} else {
 				throw new Exception("Auth Fails");
 			}

@@ -4,7 +4,16 @@
     
 <%@ include file="common-css-js.jsp" %>
 
+<% 
+            if(session.getAttribute("my-auth")== null){
+            	response.sendRedirect("/mini-project/login.jsp");
+            	return;
+            }
+%>
+
 <jsp:include page="common-header.jsp"></jsp:include>
+
+<h1 class=" row d-flex justify-content-center text-align-center">Object Oriented Prograamming With Java</h1>
 
 <div class="container-fluid">
 

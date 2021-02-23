@@ -3,13 +3,17 @@
 <div class="container-fluid">
 	<div class="row bg-dark text-light sticky-top" style="height:60px; ">
 		
-		<div class="col-3 d-flex align-items-center " >
-			<a href="home.jsp" class="btn text-light btn-link" style="font-weight:bold; font-size: 1.75rem; font-family: cursive; ">Mini Project</a>
+		<div class="col-2 d-flex align-items-center " >
+			<a href="advance_java.jsp" class="btn text-light btn-link" style="font-weight:bold; font-size: 1.75rem; font-family: cursive; ">EDAC</a>
 		</div>
 		
-		<div class="col-9  d-flex align-items-center justify-content-end">
+		<div class="col-10  d-flex align-items-center justify-content-end">
 			
 			<div>
+				<a href="AddVideo.jsp" class="btn btn-secondary">AddVideo</a>
+			</div>
+			
+			<div class="ml-1">
 				<a href="advance_java.jsp" class="btn btn-secondary">AdvanceJava</a>
 			</div>
 			
@@ -41,7 +45,7 @@
 			
 			
 			<div class="ml-1">
-				<a href="login.jsp" class="btn btn-secondary">Log Out</a>
+				<a href="logout-action" class="btn btn-secondary">Log Out</a>
 			</div>
 		</div>
 	</div>

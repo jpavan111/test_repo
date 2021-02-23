@@ -4,7 +4,16 @@
     
 <%@ include file="common-css-js.jsp" %>
 
+<% 
+            if(session.getAttribute("my-auth")== null){
+            	response.sendRedirect("/mini-project/login.jsp");
+            	return;
+            }
+%>
+
 <jsp:include page="common-header.jsp"></jsp:include>
+
+<h1 class=" row d-flex justify-content-center text-align-center">Basics And OS</h1>
 
 <div class="container-fluid">
 
@@ -14,8 +23,8 @@
 				<div class="card" >
 				  <img src="https://picsum.photos/200/300" style="height:200px; object-fit:cover" class="card-img-top" >
 				  <div class="card-body">
-				    <h5 class="card-title">Lecture 1 </h5>
-				    <p class="card-text">Password: 0eCrN.%x  </p>
+				    <h5 class="card-title">Lecture 1 </h5>				    
+				    <p class="card-text">Password: 0eCrN.%x </p>				  
 				    <a href="
 https://us02web.zoom.us/rec/share/TaHwiWrGu8EoVm1uGCSTVC7k0QiszMXiPRMCbVx3HmHE-q966X-JYZPVZlJnjof5.UlAzYCEG1ZtCvtAj
 " target="_blank" class="btn btn-secondary">Open video</a>
@@ -28,7 +37,7 @@ https://us02web.zoom.us/rec/share/TaHwiWrGu8EoVm1uGCSTVC7k0QiszMXiPRMCbVx3HmHE-q
 				  <img src="https://picsum.photos/200/300" style="height:200px; object-fit:cover" class="card-img-top" >
 				  <div class="card-body">
 				    <h5 class="card-title">Lecture 2 </h5>
-				    <p class="card-text">Password: 1gTrMf&P  </p>
+				    <p class="card-text">Password:1gTrMf&P </p>				    				    
 				    <a href="https://us02web.zoom.us/rec/share/HSoVIfOdlMY7ZuO9GOexl69NoBpQr9ZlW_PMzU7MKbUgSwLH-5aBRLrdoy7C61jZ.1l5uLU7hC03Gs7Ks
 				    " target="_blank" class="btn btn-secondary">Open video</a>
 				  </div>
@@ -39,8 +48,8 @@ https://us02web.zoom.us/rec/share/TaHwiWrGu8EoVm1uGCSTVC7k0QiszMXiPRMCbVx3HmHE-q
 				<div class="card" >
 				  <img src="https://picsum.photos/200/300" style="height:200px; object-fit:cover" class="card-img-top" >
 				  <div class="card-body">
-				    <h5 class="card-title">Lecture 3  </h5>
-				    <p class="card-text">Password: &2REd4#x </p>
+				    <h5 class="card-title">Lecture 3  </h5>				   				   
+				    <p class="card-text">Password: &2REd4#x </p>			   
 				    <a href="https://us02web.zoom.us/rec/share/U8gzqkpGfTw34nOL2q77UMmcKtCrR1LuukwiUjkTP8c_ybJx4AR9jLt82NGIEbl_.nG7tHh5tlIvBIm9I?startTime=1600922770000
 				    " target="_blank" class="btn btn-secondary">Open video</a>
 				  </div>
