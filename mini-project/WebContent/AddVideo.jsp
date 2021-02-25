@@ -18,33 +18,49 @@
 <div class="container-fluid">
 
 	<div class="row bg-dark" style="height:100vh">
+	
+	
 	<div class="col-8 offset-2 mt-3 text-light d-flex flex-column justify-content-center align-items-center">
 			<div class=" card w-50 card border-info bg-info" style="max-width: 50rem;">
 			  
 			  <div class="card-body text-success d-flex flex-column justify-content-center align-items-center" style="width:400">
-			  	<form  action="register-action" method="post" class="" style="width:100%">
+			  	<form  action="AddVideo-action" method="post" class="" style="width:100%">
+			  	
+			  	<c:if test="${param.q == 1 }">
+					<div class="alert alert-success">
+						Upload Success!!
+					</div>
+				</c:if>
+				
+				<c:if test="${param.q == 0 }">
+					<div class="alert alert-danger">
+						Upload Fails!!!
+					</div>
+				</c:if>
+				
+				
 				<div class="bg-light text-dark px-5 rounded d-flex justify-content-center" style="font-family:cursive; font-size:1.5rem; font-weight:bold">
 					 Upload Recording
 				</div>
 			
 				<div class="mt-1">
-					<input name="AddTopic" class="form-control form-control-lg" type="text" placeholder="Add Topic" >
+					<input name="topic" class="form-control form-control-lg" type="text" placeholder="Add Topic" >
 				</div>
 				
 				<div class="mt-1">
-					<input name="AddTitle" class="form-control form-control-lg" type="text" placeholder="Add Title" >
+					<input name="title" class="form-control form-control-lg" type="text" placeholder="Add Title" >
 				</div>
 				
 				<div class="mt-1">
-					<input name="Upload Url" class="form-control form-control-lg" type="text" placeholder="Upload url">
+					<input name="url" class="form-control form-control-lg" type="text" placeholder="Upload url">
 				</div>
 				<div class="mt-1">
-					<input name="Password" class="form-control form-control-lg" type="text" placeholder="Add Password" >
+					<input name="password" class="form-control form-control-lg" type="text" placeholder="Add Password" >
 				</div>
 				
 				
 				<div class="mt-1">
-					<input name="Whats inside" class="form-control form-control-lg" type="text" placeholder="What Inside...">
+					<input name="content" class="form-control form-control-lg" type="text" placeholder="What Inside...">
 				</div>
 				
 			<div class="mt-1">
