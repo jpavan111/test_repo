@@ -1,0 +1,37 @@
+.fa1 {
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 30%;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+  }
+  
+  .fa1:hover {
+      opacity: 0.6;
+      color: rgb(0, 0, 0);
+  }
+  
+  .fa1-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa1-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa1-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa1-instagram {
+    background: #125688;
+    color: white;
+     
+  }
+  
+  
